@@ -10,15 +10,19 @@ public class contact {
 	    // Stores birthday in an int
 
 	    // Creates Contact object based on parameters.
-	    public contact(String firstName, String lastName,  int phoneNumber ,String city,String state,int pinCode) {
+	    public contact(){
+	    	
+	    }
+	    public contact(String firstName, String lastName,  int phoneNumber ,String c,String s,int pn) {
 			fName = firstName;
 			lName=lastName;
-			city=this.city;
+			city=c;
 			phonenumber = phoneNumber;
-			state=this.state;
-			pinCode=this.pinCode;
+			state=s;
+			pinCode=pn;
 			
 	    }
+	    
 	    public String getCity() {
 	    	return city;
 	    }
@@ -39,6 +43,9 @@ public class contact {
 	    public int getNumber() {
 			return phonenumber;
 	    }
+	    public void setLastName(String lName) {
+			this.lName = lName;
+		}
 
 	  
 	    public String toString() {
